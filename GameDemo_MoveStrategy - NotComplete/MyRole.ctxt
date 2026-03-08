@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MyRole
+comment1.params=x\ y\ w\ h\ jvx\ jvy\ bottom
+comment1.target=MyRole(int,\ int,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=mvState
+comment3.target=void\ setMoveState(IMoveState)
+comment4.params=e
+comment4.target=void\ keyPressed(java.awt.event.KeyEvent)
+numComments=5
