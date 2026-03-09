@@ -47,10 +47,17 @@ public class MyRole extends SampleRole5
         // 2. 自動判斷是否落地並切換回 Stop 狀態
         // 如果目前是跳躍狀態，且已經精準踩在底線上
         if (mvState instanceof Jumper && y >= bottom) { // instanceof Jumper
+            y = bottom;
             jumpAbility = false;
-            this.mvState = new Stop();
-            dim1 = 0;
-            dim2 = 0;
+            if (dx == 0) {
+                this.mvState = new Stop();
+                this.dim1 = 0;
+                this.dim2 = 0;
+            } else {
+                this.mvState = new Walk();
+                this.dim1 = 1;
+                this.dim2 = (dx > 0) ? 0 : 1;     
+            }
         }
         
         //更新模型
@@ -82,5 +89,22 @@ public class MyRole extends SampleRole5
                 break;    //Remember just to set the state only  
               
             }
-         }
+    }
+    
+    @Override
+    public void keyReleased(KeyEvent e) {
+        switch (e.getKeyCode()) {
+            case KeyEvent.VK_LEFT:
+            case KeyEvent.VK_RIGHT:
+                dx = 0; // 1. 放開左右鍵時，水平速度歸零
+                
+                // 2. 如果目前「不是」在跳躍狀態中，就乖乖站好
+                if (!(mvState instanceof Jumper)) {
+                    mvState = new Stop();
+                    dim1 = 0;
+                    dim2 = 0;
+                }
+                break;
+        }
+    }
 }
