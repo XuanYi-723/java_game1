@@ -14,7 +14,7 @@ public class MyGame {
     //[act][dir]: act:0 stop, act 1: walk, act 2: fly
     
         
-    MyRole player = new MyRole(200, 450, 50, 50, 0, -100, 450);
+    MyRole player = new MyRole(200, 401, 72, 99, 0, -18, 401);
     myroles.add(player ); 
     gameEngine.registerKeyEventHandler(player); //註冊接受鍵盤事件
     
