@@ -8,7 +8,8 @@ public class MyRole extends SampleRole5
                               { new ImageSequence("walk_right/"),
                                 new ImageSequence("walk_left/")}, 
                               { new ImageSequence("fly_right/"), 
-                                new ImageSequence("fly_left/") }
+                                new ImageSequence("fly_left/") },
+                              { new ImageSequence("sleep/"), new ImageSequence("wake/")}
                          };  //建立角色分鏡圖
     
     public MyRole(int x, int y, int w, int h ,int jvx, int jvy, int bottom) {
@@ -137,6 +138,18 @@ public class MyRole extends SampleRole5
                     dy = -10;             // 垂直向上的攀爬速度
                     mvState = new Walk(); // 利用 Walk 狀態來直線移動 (不受重力影響)
                     // dim1 = 0;          //若有攀爬的分鏡圖，這裡切換
+                }
+                break;
+            case KeyEvent.VK_Z:
+                if (mvState instanceof Sleep) {
+                    this.mvState = new Stop(); // 狀態變回停止，這樣就解除睡覺的鎖定了
+                    this.dim1 = 3;             // 依然使用第 4 排的動作
+                    this.dim2 = 1;             // ✨ 切換成 wake/ (睡醒) 的圖片
+                } else if (!(mvState instanceof Jumper)) {
+                    dx = 0;
+                    this.mvState = new Sleep();
+                    this.dim1 = 3;              
+                    this.dim2 = 0;
                 }
                 break;
         }
