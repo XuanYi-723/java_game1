@@ -1,5 +1,9 @@
 #BlueJ class context
 comment0.target=Jumper
-comment1.params=r
-comment1.target=void\ move(SampleRole5)
-numComments=2
+comment1.params=
+comment1.target=Jumper()
+comment2.params=initialVy
+comment2.target=Jumper(double)
+comment3.params=r
+comment3.target=void\ move(SampleRole5)
+numComments=4

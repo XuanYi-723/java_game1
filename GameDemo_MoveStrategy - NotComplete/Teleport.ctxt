@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Teleport
+comment1.params=role
+comment1.target=void\ execute(MyRole)
+numComments=2
