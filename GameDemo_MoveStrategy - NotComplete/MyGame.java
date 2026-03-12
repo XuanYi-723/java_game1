@@ -11,12 +11,18 @@ public class MyGame {
     Game gameEngine = new Game(ctx ); //Game就是遊戲引擎
 //Step 3. 產生各種角色 (目前是空的)
     ArrayList<Role> myroles = new ArrayList<> (); //建立角色清單
+    KeyboardControl control = new KeyboardControl();
+    control.addHandlers(new JumpHandle());
+    control.addHandlers(new MoveHandle());
+    control.addHandlers(new TpHandle());
+    control.addHandlers(new ClimbHandle());
+    control.addHandlers(new SleepHandle());
     //[act][dir]: act:0 stop, act 1: walk, act 2: fly
     Background bg = new Background(0, 0, 500, 500);//背景設定
     myroles.add(bg);
         
     MyRole player = new MyRole(200, 401, 72, 99, 0, -18, 401);
-    player.setControl(new KeyboardControl());
+    player.setControl(control);
     myroles.add(player ); 
     gameEngine.registerKeyEventHandler(player); //註冊接受鍵盤事件
     

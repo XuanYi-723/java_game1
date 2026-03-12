@@ -8,12 +8,8 @@ import java.util.*;
  */
 public class KeyboardControl implements IControl{
     private List<IKeyHandler> handlers = new ArrayList<>();
-    public KeyboardControl(){
-        handlers.add(new JumpHandle());
-        handlers.add(new MoveHandle());
-        handlers.add(new TpHandle());
-        handlers.add(new ClimbHandle());
-        handlers.add(new SleepHandle());
+    public void addHandlers(IKeyHandler handler){
+        handlers.add(handler);
     }
     public void control(MyRole r,KeyEvent e){
         for (IKeyHandler handler : handlers) {
