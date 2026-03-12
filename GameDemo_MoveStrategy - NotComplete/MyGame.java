@@ -16,6 +16,7 @@ public class MyGame {
     myroles.add(bg);
         
     MyRole player = new MyRole(200, 401, 72, 99, 0, -18, 401);
+    player.setControl(new KeyboardControl());
     myroles.add(player ); 
     gameEngine.registerKeyEventHandler(player); //註冊接受鍵盤事件
     

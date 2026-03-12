@@ -194,10 +194,10 @@ public class SampleRole5 implements Role, KeyListener,  MouseListener, MouseMoti
     
     public void setX(int x) {this.x = x;}
     public void setY(int y) {this.y = y;}
-    public void setDX(int x) {this.dx = dx;}
-    public void setDY(int y) {this.dy = dy;}
-    public void setJVX(int x) {this.jvx = jvx;}
-    public void setJVY(int y) {this.jvy = jvy;}
+    public void setDX(int dx) {this.dx = dx;}
+    public void setDY(int dy) {this.dy = dy;}
+    public void setJVX(int jvx) {this.jvx = jvx;}
+    public void setJVY(int jvy) {this.jvy = jvy;}
     public void setW(int w) {this.w = w;}
     public void setH(int h) {this.h = h;}
     public void setDir(int dir) {this.dir = dir;}
