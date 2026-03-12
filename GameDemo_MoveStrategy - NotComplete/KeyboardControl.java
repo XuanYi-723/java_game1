@@ -13,6 +13,7 @@ public class KeyboardControl implements IControl{
         handlers.add(new MoveHandle());
         handlers.add(new TpHandle());
         handlers.add(new ClimbHandle());
+        handlers.add(new SleepHandle());
     }
     public void control(MyRole r,KeyEvent e){
         for (IKeyHandler handler : handlers) {

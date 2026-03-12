@@ -8,7 +8,8 @@ public class MyRole extends SampleRole5
                               { new ImageSequence("walk_right/"),
                                 new ImageSequence("walk_left/")}, 
                               { new ImageSequence("fly_right/"), 
-                                new ImageSequence("fly_left/") }
+                                new ImageSequence("fly_left/") },
+                              { new ImageSequence("sleep/"), new ImageSequence("wake/")}
                          };  //建立角色分鏡圖
     
     public MyRole(int x, int y, int w, int h ,int jvx, int jvy, int bottom) {
