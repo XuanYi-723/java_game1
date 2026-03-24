@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=IMyMediaPlayer
+comment1.params=fname
+comment1.target=void\ open(java.lang.String)
+comment2.params=
+comment2.target=void\ play()
+comment3.params=
+comment3.target=void\ stop()
+comment4.params=
+comment4.target=void\ close()
+numComments=5

@@ -26,6 +26,10 @@ public class MyGame {
     myroles.add(player ); 
     gameEngine.registerKeyEventHandler(player); //註冊接受鍵盤事件
     
+    IMyMediaPlayer bgm = new AdapterForWAV(); // 或是 AdapterForMidi()
+    bgm.open("bgm.wav"); // 請把你的背景音樂檔名改成這樣，並放在專案最外層目錄
+    bgm.play();
+    
 //Step 4: 開始執行
     gameEngine.go(myroles );
 }

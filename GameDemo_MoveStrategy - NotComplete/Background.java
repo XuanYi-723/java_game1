@@ -9,7 +9,7 @@ public class Background extends SampleRole5 {
         this.w = w;
         this.h = h;
         
-        // 載入我們剛剛準備好的 bg 資料夾圖片
+        // 載入 bg 資料夾圖片
         super.is = new ImageSequence[][] {
             { new ImageSequence("bg/") }
         };
@@ -18,7 +18,7 @@ public class Background extends SampleRole5 {
         this.dim2 = 0;
     }
     
-    // 因為背景不需要重力也不需要移動，我們把 run 留空或只呼叫 super.run()
+    // 因為背景不需要重力也不需要移動，把 run 留空或只呼叫 super.run()
     @Override
     public void run() {
         super.run(); 

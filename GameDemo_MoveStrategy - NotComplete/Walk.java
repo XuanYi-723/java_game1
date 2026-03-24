@@ -1,3 +1,4 @@
+import game.framework.*;
 
 public class Walk implements IMoveState
 {

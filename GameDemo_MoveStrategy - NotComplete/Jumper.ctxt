@@ -4,6 +4,4 @@ comment1.params=
 comment1.target=Jumper()
 comment2.params=initialVy
 comment2.target=Jumper(double)
-comment3.params=r
-comment3.target=void\ move(SampleRole5)
-numComments=4
+numComments=3

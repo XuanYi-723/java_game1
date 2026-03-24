@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=AlarmContent
+comment0.text=\r\n\ \u5728\u8FD9\u91CC\u7ED9\u51FA\u5BF9\u7C7B\ AlarmContent\ \u7684\u63CF\u8FF0\u3002\r\n\ \r\n\ @author\ (\u4F60\u7684\u540D\u5B57)\r\n\ @version\ (\u4E00\u4E2A\u7248\u672C\u53F7\u6216\u8005\u4E00\u4E2A\u65E5\u671F)\r\n
+comment1.params=
+comment1.target=AlarmContent()
+comment1.text=\r\n\ \u7C7B\ AlarmContent\ \u7684\u5BF9\u8C61\u7684\u6784\u9020\u51FD\u6570\r\n
+comment2.params=y
+comment2.target=int\ sampleMethod(int)
+comment2.text=\r\n\ \u4E00\u4E2A\u65B9\u6CD5\u7684\u4F8B\u5B50\ -\ \u4F7F\u7528\u4F60\u81EA\u5DF1\u7684\u6CE8\u91CA\u66FF\u6362\u5B83\r\n\ \r\n\ @param\ y\ \u65B9\u6CD5\u7684\u4E00\u4E2A\u793A\u4F8B\u53C2\u6570\r\n\ @return\ x\uFF0Cy\u7684\u548C\r\n
+numComments=3

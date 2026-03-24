@@ -1,10 +1,5 @@
 import java.awt.event.*;
-/**
- * 在这里给出对类 SleepHandle 的描述。
- * 
- * @author (你的名字)
- * @version (一个版本号或者一个日期)
- */
+
 public class SleepHandle implements IKeyHandler
 {
     public void handlePress(MyRole r,KeyEvent e){
